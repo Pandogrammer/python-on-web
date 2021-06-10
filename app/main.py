@@ -3,7 +3,7 @@ from flaskext.markdown import Markdown
 import pandas as pd
 import json
 # Politeia Explorer and Client
-from peopleofpi import CommentExplorer
+from app.peopleofpi import CommentExplorer
 
 comments_path = "data/comments.csv"
 
