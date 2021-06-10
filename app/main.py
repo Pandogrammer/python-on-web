@@ -13,11 +13,12 @@ Markdown(app)
 
 @app.route('/')
 def index():
-    explorer = CommentExplorer(comments_path)
-    comments = explorer.current_season_comments()
-    ranking = explorer.ranking_from_comments(comments).to_dict(orient="records")
-    season_title = "Season: Current Month"
-    return render_template("ranking.html", ranking=ranking, season_title=season_title)
+    return 'ola'
+    # explorer = CommentExplorer(comments_path)
+    # comments = explorer.current_season_comments()
+    # ranking = explorer.ranking_from_comments(comments).to_dict(orient="records")
+    # season_title = "Season: Current Month"
+    # return render_template("ranking.html", ranking=ranking, season_title=season_title)
 
 @app.route('/user/<username>')
 def user(username):
