@@ -13,7 +13,7 @@ Markdown(app)
 
 @app.route('/')
 def index():
-    return 'ola'
+    return render_template('index.html')
     # explorer = CommentExplorer(comments_path)
     # comments = explorer.current_season_comments()
     # ranking = explorer.ranking_from_comments(comments).to_dict(orient="records")
